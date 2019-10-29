@@ -1,5 +1,5 @@
 <header class="page-header">
- <p>Find me in app/views/admin/dashboard/show.html.erb</p>		   <h1>Admin &raquo; Dashboard</h1>
+		   <h1>Admin &raquo; Dashboard</h1>
  </header>
 
   <ul class="list-group">
@@ -12,3 +12,7 @@
      Categories
    </li>
  </ul>
+ <div >
+    <%= link_to "Product list", admin_products_path, class: "btn btn-info" %>
+    <%= link_to 'New Product', [:new, :admin, :product], class: 'btn btn-info' %>
+  </div> 
