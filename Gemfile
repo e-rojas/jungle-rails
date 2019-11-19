@@ -40,6 +40,7 @@ gem 'faker'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'quiet_assets'
@@ -59,7 +60,8 @@ group :production do
   gem 'rails_12factor'
 end
 
-group :development, :test do
-  gem 'rspec-rails', '~> 3.5'
-  # ...
+group :test do
+  gem 'capybara'
+  gem 'poltergeist'
+  gem 'database_cleaner'
 end
